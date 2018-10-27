@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>比原-广告问答</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body class="sidebar-mini">
+
+    <div class="wrapper">
+        <header class="navbar navbar-fixed">
+
+            <h2 class="navbar--btn page--title h3">比原-广告问答</h2>
+
+            <div class="navbar--nav ml-auto">
+                <ul class="nav">
+
+                    <li class="nav-item dropdown nav-language">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            <img src="assets/img/flags/cn.png" alt="">
+                            <span>中文</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">
+                                    <img src="assets/img/flags/us.png" alt="">
+                                    <span>English</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown nav--user online">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            <img src="assets/img/avatars/icon.png" alt="" class="rounded-circle">
+                            <span>aaron</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#sCenteredModal" data-toggle="modal"><i class="far fa-user" ></i>问答记录</a></li>
+                            <li><a href="#sCenteredModal" data-toggle="modal"><i class="far fa-envelope"></i>我的奖金</a></li>
+                            <li><a href="#sCenteredModal" data-toggle="modal"><i class="fa fa-cog"></i>成为广告主</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        
+        <main class="main--container">
+            <section id="pageHeader" class="page--header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item "><span>任意选择一个广告商，点击‘答广告，赢奖金’，即可进入答题页面<br>快来赢取你的奖金吧！</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="summary--widget">
+                                <div class="summary--item">
+
+                                    <p class="summary--title">今日已领奖金</p>
+                                    <p class="summary--stats text-green">180 BTM</p>
+                                </div>
+
+                                <div class="summary--item">
+
+                                    <p class="summary--title">累计已领奖励</p>
+                                    <p class="summary--stats text-orange">20000 BTM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main--content">
+                <div id="firstPage" class="row gutter-20">
+
+                    <div class="col-xl-4 col-md-6">
+                                <div class="panel">
+                                    <div class="profile--panel">
+                                        <div class="img-wrapper" data-bg-img="./assets/img/tmall1.png">
+                                            <div class="img online">
+                                                <img src="./assets/img/tmall2.png" alt="" class="rounded-circle">
+                                            </div>
+                                        </div>
+        
+                                        <div class="name">
+                                            <h3 class="h3"><a href="https://www.tmall.com/">天猫</a></h3>
+                                        </div>
+        
+                                        <div class="role">
+                                            <p>理想生活 上天猫！</p>
+                                        </div>
+        
+                                        <div class="action">
+                                            <a href="#" class="btn btn-info" onclick="showQuestion(0)">答广告 赢奖金</a>
+                                        </div>
+        
+                                        <div class="bio">
+                                            <p>天猫 - 专业线上综合购物平台，全球消费者挚爱的品质购物之城！旨在引领中国消费者第一时间发现和体验全球化、更优质的生活方式，提前开启趋势中的理想生活！理想生活，上天猫！</p>
+                                        </div>
+        
+                                        <ul class="info nav text-uppercase">
+                                            <li>
+                                                <strong>1</strong>
+                                                <span>题目数量</span>
+                                            </li>
+                                            <li>
+                                                <strong>10</strong>
+                                                <span>闯关奖金</span>
+                                            </li>
+                                            <li>
+                                                <strong>100</strong>
+                                                <span>已领奖金</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                            <div class="panel">
+                                <div class="profile--panel">
+                                    <div class="img-wrapper" data-bg-img="./assets/img/shell1.png">
+                                        <div class="img online">
+                                            <img src="./assets/img/shell2.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                    </div>
+    
+                                    <div class="name">
+                                        <h3 class="h3"><a href="https://cd.ke.com/?utm_source=baidu&utm_medium=pinzhuan&utm_term=biaoti&utm_content=biaotimiaoshu&utm_campaign=sousuo">贝壳找房</a></h3>
+                                    </div>
+    
+                                    <div class="role">
+                                        <p>海量真房源 省心上贝壳</p>
+                                    </div>
+    
+                                    <div class="action">
+                                        <a href="#" class="btn btn-info" onclick="showQuestion(1)">答广告 赢奖金</a>
+                                    </div>
+    
+                                    <div class="bio">
+                                        <p>贝壳找房 由链家网升级而来，是以技术驱动的品质居住服务平台，聚合和赋能全行业的优质服务者，打造开放的品质居住服务生态，致力于为两亿家庭提供包括二手房、新房、租赁和装修全方位居住服务。</p>
+                                    </div>
+    
+                                    <ul class="info nav text-uppercase">
+                                        <li>
+                                            <strong>1</strong>
+                                            <span>题目数量</span>
+                                        </li>
+                                        <li>
+                                            <strong>10</strong>
+                                            <span>闯关奖金</span>
+                                        </li>
+                                        <li>
+                                            <strong>100</strong>
+                                            <span>已领奖金</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                            <div class="panel">
+                                <div class="profile--panel">
+                                    <div class="img-wrapper" data-bg-img="./assets/img/oppo1.png">
+                                        <div class="img online">
+                                            <img src="./assets/img/oppo2.png" alt="" class="rounded-circle">
+                                        </div>
+                                    </div>
+    
+                                    <div class="name">
+                                        <h3 class="h3"><a href='https://www.oppo.com/cn/product/r17pro/index.html'>OPPO</a></h3>
+                                    </div>
+    
+                                    <div class="role">
+                                        <p>OPPO R17 Pro，超级闪充，超强夜拍！</p>
+                                    </div>
+    
+                                    <div class="action">
+                                        <a href="#" class="btn btn-info" onclick="showQuestion(2)">答广告 赢奖金</a>
+                                    </div>
+    
+                                    <div class="bio">
+                                        <p>夜的美，比白天更温柔。R17 Pro用超强暗拍带你发现夜里的迷人瞬间。F1.5/F2.4灵动光圈搭配OIS光学防抖，将微弱的光汇集成清晰明亮的画面；AI超清引擎，一键让夜景更清晰、色彩更动人。今晚，带上R17 Pro，发现夜的美。</p>
+                                    </div>
+    
+                                    <ul class="info nav text-uppercase">
+                                        <li>
+                                            <strong>1</strong>
+                                            <span>题目数量</span>
+                                        </li>
+                                        <li>
+                                            <strong>10</strong>
+                                            <span>闯关奖金</span>
+                                        </li>
+                                        <li>
+                                            <strong>100</strong>
+                                            <span>已领奖金</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                  
+                    <div class="col-xl-4 col-md-6">
+                                    <div class="panel">
+                                        <div class="profile--panel">
+                                            <div class="img-wrapper" data-bg-img="./assets/img/xlk1.png">
+                                                <div class="img online">
+                                                    <img src="./assets/img/xlk2.png" alt="" class="rounded-circle">
+                                                </div>
+                                            </div>
+            
+                                            <div class="name">
+                                                <h3 class="h3"><a href='http://www.xiaolongkan.com/index.html'>小龙坎</a></h3>
+                                            </div>
+            
+                                            <div class="role">
+                                                <p>总有一天 你会来吃！</p>
+                                            </div>
+            
+                                            <div class="action">
+                                                <a href="#" class="btn btn-info" onclick="showQuestion(3)">答广告 赢奖金</a>
+                                            </div>
+            
+                                            <div class="bio">
+                                                <p>小龙坎老火锅从十余张火锅桌起步，发展到如今旗下拥有成都十家直营店，及分布在全国及省内众多地、市、州共五百多家加盟合作商。荣获大众点评网“2014年度最佳餐厅”、第十二届成都国际美食节火锅类评选第一名《成都美食》“2015成都火锅最大黑马”、《华西都市报》“2015成都十大最红火锅”、腾讯大成网“2015成都火锅人气王”等多个殊荣，成为“第12届中国（成都）国际美食节定官方宣传片的指定拍摄地”。</p>
+                                            </div>
+            
+                                            <ul class="info nav text-uppercase">
+                                                <li>
+                                                    <strong>1</strong>
+                                                    <span>题目数量</span>
+                                                </li>
+                                                <li>
+                                                    <strong>10</strong>
+                                                    <span>闯关奖金</span>
+                                                </li>
+                                                <li>
+                                                    <strong>100</strong>
+                                                    <span>已领奖金</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                            <div class="panel">
+                                <div class="profile--panel">
+                                    <div class="img-wrapper" data-bg-img="./assets/img/iphone.png">
+                                        <div class="img online">
+                                            <img src="./assets/img/appleLogo.png" alt="" class="rounded-circle">
+                                        </div>
+                                    </div>
+    
+                                    <div class="name">
+                                        <h3 class="h3"><a href="https://www.apple.com/">苹果</a></h3>
+                                    </div>
+    
+                                    <div class="role">
+                                        <p>iphoneXs，大屏幕上见！</p>
+                                    </div>
+    
+                                    <div class="action">
+                                        <a href="#" class="btn btn-info" onclick="showQuestion(4)">答广告 赢奖金</a>
+                                    </div>
+    
+                                    <div class="bio">
+                                        <p>超视网膜显示屏现以两种尺寸为你演绎广阔的精彩，其中一款更是 iPhone 史上最大的显示屏。此外，更有识别速度进一步提升的面容 ID、iPhone 迄今最智能最强大的芯片，以及支持景深控制的突破性双镜头系统。iPhone XS 云集了 iPhone 无数深得人心的亮点，并展现得淋漓尽致。</p>
+                                    </div>
+    
+                                    <ul class="info nav text-uppercase">
+                                        <li>
+                                            <strong>1</strong>
+                                            <span>题目数量</span>
+                                        </li>
+                                        <li>
+                                            <strong>10</strong>
+                                            <span>闯关奖金</span>
+                                        </li>
+                                        <li>
+                                            <strong>100</strong>
+                                            <span>已领奖金</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                                            <div class="panel">
+                                                <div class="profile--panel">
+                                                    <div class="img-wrapper" data-bg-img="./assets/img/iphone.png">
+                                                        <div class="img online">
+                                                            <img src="./assets/img/appleLogo.png" alt="" class="rounded-circle">
+                                                        </div>
+                                                    </div>
+                    
+                                                    <div class="name">
+                                                        <h3 class="h3">苹果</h3>
+                                                    </div>
+                    
+                                                    <div class="role">
+                                                        <p>iphoneXs，大屏幕上见！</p>
+                                                    </div>
+                    
+                                                    <div class="action">
+                                                        <a href="#" class="btn btn-info" onclick="showQuestion(5)">答广告 赢奖金</a>
+                                                    </div>
+                    
+                                                    <div class="bio">
+                                                        <p>超视网膜显示屏现以两种尺寸为你演绎广阔的精彩，其中一款更是 iPhone 史上最大的显示屏。此外，更有识别速度进一步提升的面容 ID、iPhone 迄今最智能最强大的芯片，以及支持景深控制的突破性双镜头系统。iPhone XS 云集了 iPhone 无数深得人心的亮点，并展现得淋漓尽致。</p>
+                                                    </div>
+                    
+                                                    <ul class="info nav text-uppercase">
+                                                        <li>
+                                                            <strong>1</strong>
+                                                            <span>题目数量</span>
+                                                        </li>
+                                                        <li>
+                                                            <strong>10</strong>
+                                                            <span>闯关奖金</span>
+                                                        </li>
+                                                        <li>
+                                                            <strong>100</strong>
+                                                            <span>已领奖金</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                    </div>
+                </div>
+                
+                <div id="question" class="row guatter-20" style="display: none">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 col-md-6">
+                       
+                        <div class="pricing--item text-center mb-4 active">
+                            <span class="pricing--text text-white bg-orange">第 1 题</span>
+
+                            <div class="pricing--header text-green text-uppercase">
+                                <h3 class="h3">选择题</h3>
+                            </div>
+
+                            <div id='questionContent'>
+                                <div class="pricing--title pricing--title--box text-white bg-green">
+                                    <p>iphoneXs 的最新广告语</p>
+                                </div>
+
+                                <div class="pricing--features">
+                                    <ul class="list-unstyled">
+                                        <li><strong>A.</strong>大屏幕上见</li>
+                                        <li><strong>B.</strong>照亮你的美</li>
+                                        <li><strong>C.</strong>拍人更美</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="pricing--action">
+                                <a href="#vCenteredModal" data-toggle="modal" class="btn btn-rounded btn-outline-success" onclick="anwser('A')">A</a>
+                                <a href="#vCenteredModal" data-toggle="modal" class="btn btn-rounded btn-outline-success" onclick="anwser('B')">B</a>
+                                <a href="#vCenteredModal" data-toggle="modal" class="btn btn-rounded btn-outline-success" onclick="anwser('C')">C</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="pricing--item text-center px-0 mb-4">
+                            <div class="pricing--header text-white bg-green text-uppercase">
+                                <h3 class="h3">提示</h3>
+                            </div>
+
+                            <div class="pricing--title text-white bg-green">
+                                <p class="h5">点击下面的按钮，<br>会把你带到藏有答案的地方</p>
+                            </div>
+
+                            <div class="pricing--action">
+                                <a id="link" href="#" target="_blank" class="btn btn-rounded btn-success">寻找答案</a>
+                            </div>
+                        </div>
+                </div>
+            </section>
+           
+            <footer class="main--footer main--footer-light">
+                <p>@由<a href="https://bytom.io/">比原链</a>提供区块链技术支持.</p>
+            </footer>
+
+            <div id="vCenteredModal" class="modal fade">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">说明：</h5>
+        
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+        
+                        <div class="modal-body">
+                            <p>答题说明：<br><b>请使用比原链官方钱包输入以下合约地址来解锁获得奖励<br>答题内容为您的选项: <b id=data></i></b></p>
+                            <p>合约地址：<br><b id='address'>0ee57edcfb4c463ccbfec11aa676ffc03d5dbbae573a675e632200efd855c6cd</b></p>
+                            <p>钱包使用指南：<a href="http://8btc.com/thread-223386-1-1.html">点击查看</a></p>
+                        </div>
+        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" onclick="location.reload()">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="sCenteredModal" class="modal fade">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">非常抱歉：</h5>
+        
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+        
+                        <div class="modal-body">
+                            <p><b>程序猿正在玩命开发此功能，请您耐心等待！</b></p>
+                        </div>
+        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" onclick="location.reload()">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="./node_modules/bytom-sdk/dist/client.js"></script>
+    <script>
+        'use strict';
+        
+        var questions = [
+            `<div class="pricing--title pricing--title--box text-white bg-green">
+                <p>以下哪个选项不是天猫产品</p>
+            </div>
+            <div class="pricing--features">
+                <ul class="list-unstyled">
+                    <li><strong>A.</strong>天猫超市</li>
+                    <li><strong>B.</strong>天猫生鲜</li>
+                    <li><strong>C.</strong>天猫国际</li>
+                </ul>
+            </div>`,
+            `<div class="pricing--title pricing--title--box text-white bg-green">
+                <p>以下关于贝壳说法正确的是</p>
+            </div>
+            <div class="pricing--features">
+                <ul class="list-unstyled">
+                    <li><strong>A.</strong>收录超过2亿房屋</li>
+                    <li><strong>B.</strong>准确率95%的房屋估价</li>
+                    <li><strong>C.</strong>业界唯一的真VR看房</li>
+                </ul>
+            </div>`,
+            `<div class="pricing--title pricing--title--box text-white bg-green">
+                <p>下面哪一句是最新OPPO R17的广告语</p>
+            </div>
+            <div class="pricing--features">
+                <ul class="list-unstyled">
+                    <li><strong>A.</strong>超强夜拍，超级闪充</li>
+                    <li><strong>B.</strong>随光而变，心动所在</li>
+                    <li><strong>C.</strong>超凡一体，未来旗舰</li>
+                </ul>
+            </div>`,
+            `<div class="pricing--title pricing--title--box text-white bg-green">
+                <p>小龙坎老火锅多年来一直坚持的“经营理念”是什么</p>
+            </div>
+            <div class="pricing--features">
+                <ul class="list-unstyled">
+                    <li><strong>A.</strong>匠心，极致</li>
+                    <li><strong>B.</strong>总有一天，你会来吃</li>
+                    <li><strong>C.</strong>用心做味道， 良心做品质</li>
+                    
+                </ul>
+            </div>`,
+            `<div class="pricing--title pricing--title--box text-white bg-green">
+                <p>iphone Xs max 的独特之处在于</p>
+            </div>
+            <div class="pricing--features">
+                <ul class="list-unstyled">
+                    <li><strong>A.</strong>iphone迄今为止最坚固的面板</li>
+                    <li><strong>B.</strong>iphone迄今为止最强大的芯片</li>
+                    <li><strong>C.</strong>iphone迄今为止最清晰的相机</li>
+                    
+                </ul>
+            </div>`,
+        ]
+        var address = [
+            '111111111111111',
+            '222222222222222',
+            '333333333333333',
+            '444444444444444',
+            '555555555555555',
+            '666666666666666'
+        ];
+        var link = [
+            'https://www.tmall.com/',
+            'https://about.ke.com/introduce/index.html',
+            'https://www.oppo.com/cn/product/r17pro/index.html',
+            'http://www.xiaolongkan.com/index.html',
+            'https://www.apple.com/cn/iphone-xs/',
+
+        ];
+
+        function showQuestion(i) {
+            document.getElementById('pageHeader').style.display = 'none';
+            document.getElementById('firstPage').style.display = 'none';
+            document.getElementById('questionContent').innerHTML = questions[i];
+            document.getElementById('question').style.display = '';
+            document.getElementById('address').innerText = address[i];
+            document.getElementById('link').href = link[i];
+        }
+
+        function anwser(opt) {
+            document.getElementById('data').innerText = opt
+        }
+    </script>
+</body>
+</html>
